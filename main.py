@@ -39,13 +39,13 @@ class AISalesPromptCreator:
     def render_api_keys(self):
         with st.expander("LLM Settings", expanded=True):
             self.llm_model = st.text_input(
-                "Model Name", placeholder="ollama/llama3.1", value="ollama/llama3.1"
+                "Model Name", placeholder="lm_studio/qwen3-vl-4b-instruct", value="lm_studio/qwen3-vl-4b-instruct"
             )
             self.api_key = st.text_input("API Key", placeholder="sk-...", value="N/A")
             self.base_url = st.text_input(
                 "Base URL",
-                placeholder="http://localhost:11434",
-                value="http://localhost:11434",
+                placeholder="http://127.0.0.1:1234/v1",
+                value="http://127.0.0.1:1234/v1",
             )
 
     def render_templates(self):

@@ -1,0 +1,11 @@
+version: 2
+authtoken: your-ngrok-auth-token
+
+tunnels:
+  lm-studio:
+    proto: http
+    addr: 1234
+
+  ai-prompt-creator:
+    proto: http
+    addr: 8501

@@ -1,0 +1,9 @@
+on_http_request:
+  - type: ai-gateway
+    config:
+      providers:
+        - id: "lm-studio"
+          base_url: "https://lm-studio.internal"
+          models:
+            - id: "qwen3-vl-4b-instruct"
+        

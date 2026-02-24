@@ -8,8 +8,8 @@ from langchain_core.output_parsers import StrOutputParser
 
 class PromptGeneratorConfig(BaseModel):
     # llm opts
-    model: str = "ollama/llama3.1"
-    api_base: str = "http://localhost:11434"
+    model: str = "lm_studio/qwen3-vl-4b-instruct"
+    api_base: str = "http://127.0.0.1:1234/v1"
     api_key: str = ""
 
     # ai opts
